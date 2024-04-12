@@ -4,6 +4,8 @@
   <li>Se utilizo JPA + hibernate para el CRUD en MySQL.</li>
   <li>Se utiliza DTO.</li>
   <li>Verificacion con Postman.</li>
+  <li>Maven.</li>
+  <li>Inyeccion de dependencias.</li>
 </ul>
 <h3>La API permite las siguentes acciones:</h3>
 <ul>
