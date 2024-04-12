@@ -3,7 +3,7 @@
 <ul>
   <li>Se utilizo JPA + hibernate para el CRUD en SQL</li>
   <li>Se utiliza DTO</li>
-  <li>Verificacion con PostMan</li>
+  <li>Verificacion con Postman</li>
 </ul>
 <h3>La API permite las siguentes acciones:</h3>
 <ul>
