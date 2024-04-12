@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "590805e2-2f44-4b26-acdd-67b6af3c4e93",
+		"name": "ClinicaVeterinaria_prueba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34072603"
+	},
+	"item": [
+		{
+			"name": "createDueño",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dni\":45539672,\r\n    \"nombre\":\"Facundo\",\r\n    \"apellido\":\"Gerli\",\r\n    \"celular\":5077273\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/dueño/alta",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dueño",
+						"alta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteDueño",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/dueño/baja?id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dueño",
+						"baja"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateDueño",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"dni\":45523,\r\n    \"nombre\":\"Facundo\",\r\n    \"apellido\":\"Gerli\",\r\n    \"celular\":5077273\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/dueño/modificar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dueño",
+						"modificar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findDueño",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/dueño/buscar?id=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dueño",
+						"buscar"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "altaMascota",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Luna\",\r\n    \"especie\":\"perro\",\r\n    \"raza\":\"caniche\",\r\n    \"color\":\"Amarillo\",\r\n    \"dueño\": {\r\n    \"dni\":46428008,\r\n    \"nombre\":\"Victoria\",\r\n    \"apellido\":\"Gerli\",\r\n    \"celular\":502321\r\n    }\r\n    }\r\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/veterinaria/alta",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"veterinaria",
+						"alta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteMascota",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/veterinaria/baja?id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"veterinaria",
+						"baja"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mostrarTodos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/veterinaria/traerTodos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"veterinaria",
+						"traerTodos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modificarMascota",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":2,\r\n    \"nombre\":\"Roco\",\r\n    \"especie\":\"Gato\",\r\n    \"raza\":\"amarilliniito\",\r\n    \"color\":\"Amarillo\",\r\n    \"dueño\": {\"id\":2}\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/veterinaria/modificar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"veterinaria",
+						"modificar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mostrarCaniches",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/veterinaria/mostrarCaniches",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"veterinaria",
+						"mostrarCaniches"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscarDTO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/veterinaria/buscar/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"veterinaria",
+						"buscar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
